@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>InfinityFree Landing Page</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f172a;
+    font-family:Arial,sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Container */
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+/* Card */
+.card{
+    background:#111827;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 0 40px rgba(0,0,0,0.45);
+}
+
+/* Video Frame */
+.video-frame{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    background:#000;
+    overflow:hidden;
+}
+
+/* Thumbnail */
+.video-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Bottom Overlay */
+.video-frame::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:35%;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        transparent
+    );
+    z-index:1;
+}
+
+/* Play Button */
+.play-button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:85px;
+    height:85px;
+    border-radius:50%;
+    background:rgba(0,0,0,0.45);
+    border:2px solid rgba(255,255,255,0.9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:5;
+    transition:0.25s ease;
+    backdrop-filter:blur(4px);
+}
+
+.play-button::before{
+    content:"▶";
+    color:white;
+    font-size:30px;
+    margin-left:6px;
+}
+
+.video-frame:hover .play-button{
+    transform:translate(-50%,-50%) scale(1.08);
+    background:rgba(0,0,0,0.65);
+}
+
+/* Progress */
+.controls{
+    position:absolute;
+    bottom:18px;
+    left:50%;
+    transform:translateX(-50%);
+    width:88%;
+    z-index:5;
+}
+
+.progress{
+    width:100%;
+    height:4px;
+    background:rgba(255,255,255,0.25);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress::after{
+    content:"";
+    display:block;
+    width:30%;
+    height:100%;
+    background:white;
+    border-radius:20px;
+}
+
+/* Content */
+.content{
+    padding:24px;
+    text-align:center;
+}
+
+.content h1{
+    color:white;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#cbd5e1;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* Buttons */
+.buttons{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.button{
+    flex:1;
+    max-width:260px;
+    padding:14px 18px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    transition:0.25s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+}
+
+.full{
+    background:#2563eb;
+}
+
+.alternate{
+    background:#374151;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+
+/* Histats */
+.histats-box{
+    text-align:center;
+    padding:15px 0 5px;
+    min-height:20px;
+}
+
+#histats_counter{
+    display:inline-block;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    body{
+        padding:12px;
+        align-items:flex-start;
+        padding-top:20px;
+    }
+
+    .video-frame{
+        aspect-ratio:9/16;
+    }
+
+    .play-button{
+        width:70px;
+        height:70px;
+    }
+
+    .play-button::before{
+        font-size:24px;
+    }
+
+    .content{
+        padding:18px;
+    }
+
+    .content h1{
+        font-size:24px;
+    }
+
+    .content p{
+        font-size:14px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .button{
+        max-width:none;
+        width:100%;
+    }
+
+}
+
+</style>
+
+<!-- Histats.com START -->
+
+<script type="text/javascript">
+var _Hasync = _Hasync || [];
+
+_Hasync.push(['Histats.start', '1,4975104,4,511,95,18,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+
+(function() {
+    var hs = document.createElement('script');
+    hs.type = 'text/javascript';
+    hs.async = true;
+    hs.src = '//s10.histats.com/js15_as.js';
+
+    (document.getElementsByTagName('head')[0] ||
+     document.getElementsByTagName('body')[0]).appendChild(hs);
+})();
+</script>
+
+<!-- Histats.com END -->
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<div class="card">
+
+    <!-- Thumbnail / Video Preview -->
+    <a href="https://omg10.com/4/11943831"
+       target="_blank"
+       rel="noopener">
+
+        <div class="video-frame">
+
+            <img
+                src="https://ik.imagekit.io/fullvibe/Gemini_Generated_Image_203s4h203s4h203s.jfif"
+                alt="Watch Video">
+
+            <!-- Play Button -->
+            <div class="play-button"></div>
+
+            <!-- Progress -->
+            <div class="controls">
+                <div class="progress"></div>
+            </div>
+
+        </div>
+
+    </a>
+
+    <!-- Content -->
+    <div class="content">
+
+        <h1>Watch Video</h1>
+
+        <p>Choose an option below to watch the video.</p>
+
+        <!-- TWO BUTTONS -->
+        <div class="buttons">
+
+            <a class="button full"
+               href="https://omg10.com/4/11943831"
+               target="_blank"
+               rel="noopener">
+                ▶ Full Version
+            </a>
+
+            <a class="button alternate"
+               href="https://omg10.com/4/11943831"
+               target="_blank"
+               rel="noopener">
+                🔗 Alternate
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Histats Counter -->
+<div class="histats-box">
+
+    <div id="histats_counter"></div>
+
+    <noscript>
+        <a href="/" target="_blank">
+            <img
+                src="//sstatic1.histats.com/0.gif?4975104&101"
+                alt="free hit counter"
+                border="0">
+        </a>
+    </noscript>
+
+</div>
+```
+
+</div>
+
+</body>
+</html>
